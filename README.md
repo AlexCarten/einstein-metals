@@ -4,7 +4,9 @@
 
 **Why gold is gold and mercury is liquid — relativity inside the atom, built from millions of particles.**
 
-<img src="media/gold_storyboard.jpg" width="100%">
+<img src="media/gold_intro.gif" width="200"> &nbsp; <img src="media/gold_shrink.gif" width="200"> &nbsp; <img src="media/mercury_melt.gif" width="200">
+
+<sub>rendered in Blender with the scripts in this repo</sub>
 
 *Every gold ring is a relativity experiment.*
 
@@ -28,7 +30,7 @@ The outer **6s** orbital contracts by roughly 17 %, and two famous metals change
 
 ## 1 · Gold — why it isn't silver
 
-<img src="media/gold_grains.jpg" width="70%">
+<img src="media/gold_intro.gif" width="220"> &nbsp; <img src="media/gold_levels.jpg" width="220"> &nbsp; <img src="media/gold_return.gif" width="220">
 
 | | silver | gold |
 |---|---|---|
@@ -44,7 +46,7 @@ so gold absorbs blue light and reflects what is left: yellow.
 
 ## 2 · Mercury — why it's liquid
 
-<img src="media/mercury_storyboard.jpg" width="100%">
+<img src="media/mercury_freeze.gif" width="220"> &nbsp; <img src="media/mercury_bonds.gif" width="220"> &nbsp; <img src="media/mercury_melt.gif" width="220">
 
 Mercury's 6s shell is the same contracted shell — and it is **already full** (6s²).
 The atoms have almost nothing to share, so they barely bond. Relativistic simulations (2017) put its melting point at
