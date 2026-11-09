@@ -2,9 +2,9 @@
 
 # Einstein's Metals
 
-**Why gold is gold and mercury is liquid — relativity inside the atom, built from millions of particles.**
+**Why gold is gold, mercury is liquid and element 118 melts — relativity inside the atom, built from millions of particles.**
 
-<img src="media/gold_intro.gif" width="200"> &nbsp; <img src="media/gold_shrink.gif" width="200"> &nbsp; <img src="media/mercury_melt.gif" width="200">
+<img src="media/gold_intro.gif" width="200"> &nbsp; <img src="media/mercury_melt.gif" width="200"> &nbsp; <img src="media/og_intro.gif" width="200">
 
 <sub>rendered in Blender with the scripts in this repo</sub>
 
@@ -55,11 +55,24 @@ The atoms have almost nothing to share, so they barely bond. Relativistic simula
 `mercury/mercury_blender.py` — 30 s: liquid → a 27-atom crystal → dive into 1 atom (0 → 58 % of c, 6s shrinks) →
 the bonds between atoms fade → a thermometer falls from +82 °C to −39 °C and the crystal melts.
 
+## 3 · Oganesson — the atom that melts
+
+<img src="media/og_intro.gif" width="220"> &nbsp; <img src="media/og_fast.gif" width="220"> &nbsp; <img src="media/og_melt.gif" width="220">
+
+Element 118: 118 electrons in 7 shells, and about **86 % of c** for the inner electrons (γ ≈ 2).
+Relativistic calculations (Jerabek et al., PRL 2018) show its shell structure smearing out almost into an electron gas.
+Smits et al. (2020) predict it is a **solid at room temperature (melts ~52 °C)**, not the noble gas the table promises.
+Only about 5 atoms have ever been made (Dubna, 2002–2005), each lasting under 1 ms.
+
+`oganesson/oganesson_blender.py` — 30 s: a cut-away atom with 7 nested shells and a hot nucleus → electrons speed up →
+the shells smear into one fog → "the table says gas, the math says solid" → 5 atoms, under 1 ms each.
+Grains flow around the axis: orange one way, blue the other, white slow.
+
 ## Run it
 
 1. `File → New → General`
-2. `Scripting → Open → gold/gold_blender.py` (or `mercury/mercury_blender.py`) `→ Run Script`
-3. `Ctrl + F12` → the video lands in `~/OrbitalRenders/gold/` or `~/OrbitalRenders/mercury/`
+2. `Scripting → Open → gold/gold_blender.py` (or `mercury/…`, `oganesson/…`) `→ Run Script`
+3. `Ctrl + F12` → the video lands in `~/OrbitalRenders/<element>/`
 
 Everything is baked (keyframes + Geometry Nodes): no Python runs during playback or render.
 Each grain is a small lit metal sphere with real shadows.
@@ -80,6 +93,7 @@ Original ambient scores, timed to each video, generated from code (no samples):
 pip install numpy scipy soundfile
 python gold/gold_music.py        # -> gold_music.wav
 python mercury/mercury_music.py  # -> mercury_music.wav
+python oganesson/oganesson_music.py  # -> oganesson_music.wav
 ```
 
 Drop the `.wav` at 0 s on top of the render.
@@ -88,7 +102,8 @@ Drop the `.wav` at 0 s on top of the render.
 
 - Electron clouds use **hydrogen-like** radial shapes (6s, 5d, core) sampled from |ψ|² — an illustration of the real effect, not a full relativistic calculation.
 - The numbers (58 % of c, γ ≈ 1.22, ~17 % contraction, 3.7 → 2.4 eV, +82 → −39 °C) come from the relativistic quantum chemistry literature (Pyykkö's reviews; the 2017 mercury melting-point simulations).
-- There is a cat hidden in each video. 🐈
+- Oganesson: shell radii and smearing are illustrative; the 86 % / γ ≈ 2 / ~52 °C / ~5 atoms figures are from the papers above.
+- There is a cat hidden in the gold and mercury videos 🐈, and an "Og 118" tile in the oganesson one.
 
 ## Credits
 
